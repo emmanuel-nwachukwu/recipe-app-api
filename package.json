@@ -1,0 +1,28 @@
+{
+  "name": "recipe-mobile-app-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@clerk/clerk-expo": "^2.19.21",
+    "@neondatabase/serverless": "^1.0.0",
+    "cors": "^2.8.6",
+    "cron": "^4.3.0",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.8",
+    "nodemon": "^3.1.11"
+  }
+}
