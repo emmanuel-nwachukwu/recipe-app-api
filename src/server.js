@@ -36,7 +36,7 @@ app.get("/api/favourites/:userId", async (req, res) => {
 
     return res.status(200).json({
       responseCode: 200,
-      responseMessage: "Internal server error",
+      responseMessage: "Favourites fetched succesfully",
       data: userFavourites,
     });
   } catch (error) {
