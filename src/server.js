@@ -28,7 +28,7 @@ app.get("/api/favourites/:userId", async (req, res) => {
     const userFavourites = await db
       .select()
       .from(favouritesTable)
-      .where(eq(favouritesTable.userId.userId, userId));
+      .where(eq(favouritesTable.userId, userId));
 
     return res.status(200).json({
       responseCode: 200,
